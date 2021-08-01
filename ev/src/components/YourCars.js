@@ -1,18 +1,19 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
 
 function YourCars({cars, setCars}){
   return (
     <ul>
      {cars.map(car => {
-       if(car.rapid === 'no' && car.price<20000){
+       if(car.rapid === 'yes' && car.range>170){
        return (
-         <li key={car.name}>
-           {car.name}
-           {car.price}
+         <div key={car.name}>
+           <div>{car.name}</div>
            <img src={car.img} alt='car'/>
+           <div>{car.price}</div>
            <a href={car.link}>More info</a>
-         </li>
+            <div>----------------</div>
+         </div>
        )
      }})}
     </ul>
