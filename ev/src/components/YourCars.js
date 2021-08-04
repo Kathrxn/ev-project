@@ -3,20 +3,19 @@ import React from 'react';
 
 function YourCars({cars, setCars}){
   return (
-    <ul>
+    <div>
      {cars.map(car => {
-       if(car.rapid === 'yes' && car.range>170){
+       if(car.rapid === 'yes' && car.range>250 && car.price<50000){
        return (
          <div key={car.name}>
-           <div>{car.name}</div>
-           <img src={car.img} alt='car'/>
-           <div>{car.price}</div>
-           <a href={car.link}>More info</a>
-            <div>----------------</div>
+           <div><a href={car.link}>{car.name}</a></div>
+            <img src={car.img} alt='car'/>
+            <div>{car.price}</div>
+          <div>----------------</div>
          </div>
        )
      }})}
-    </ul>
+   </div>
   );
 };
 
