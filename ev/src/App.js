@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import data from './carList';
-import Questions from './components/Questions';
+import Form from './components/Form';
 
 function App() {
     const [cars, setCars] = useState(data());
@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <h1>Hello</h1>
-      <Questions cars={cars} setCars={setCars} chargePoints={chargePoints} setChargePoints={setChargePoints}/>
+      <Form cars={cars} setCars={setCars} chargePoints={chargePoints} setChargePoints={setChargePoints}/>
     </div>
   );
 }
