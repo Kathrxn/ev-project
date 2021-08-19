@@ -8,7 +8,7 @@ function Form({cars, setCars, chargePoints, setChargePoints}){
   const [work, setWork] = useState('yes')
   const [range, setRange] = useState('0-99')
   const [otherCar, setOtherCar] = useState('yes')
-  const [budget, setBudget] = useState('0-20000')
+  const [budget, setBudget] = useState('0-19999')
   const [finalScore, setFinalScore] = useState('')
   //events
   function inputPostcode(e){
