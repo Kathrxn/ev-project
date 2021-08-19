@@ -120,12 +120,7 @@ function Form({cars, setCars, chargePoints, setChargePoints}){
         </select>
       </form>
       <button onClick={() => { SearchPostcode(); CalculateScore() }}>Submit</button>
-      <div>{chargePoints}</div>
-      <div>{parking}</div>
-      <div>{work}</div>
-      <div>{range}</div>
-      <div>{otherCar}</div>
-      <div>{budget}</div>
+      <div>Charging points = {chargePoints}</div>
       <div>Your score is {finalScore}</div>
       <div>
         <YourCars cars={cars} setCars={setCars}/>
