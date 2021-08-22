@@ -10,6 +10,7 @@ function Form({cars, setCars}){
   const [otherCar, setOtherCar] = useState('yes')
   const [budget, setBudget] = useState('0-19999')
   const [finalScore, setFinalScore] = useState('')
+  const [noOfChargers, setNoOfChargers] = useState('')
   const chargePoints = ''
   //events
   function inputPostcode(e){
@@ -71,7 +72,7 @@ function Form({cars, setCars}){
             score=score-20
           }
           setFinalScore(score)
-          console.log(score)
+          setNoOfChargers(chargePoints)
         })
       };
 
@@ -120,6 +121,7 @@ function Form({cars, setCars}){
       </form>
       <button onClick={SearchPostcode}>Submit</button>
       <div>Your score is {finalScore}</div>
+      <div>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode</div>
       <div>
         <YourCars cars={cars} setCars={setCars}/>
       </div>
