@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import YourCars from './YourCars';
 import axios from 'axios';
 
-function Form({cars, setCars, chargePoints, setChargePoints}){
+function Form({cars, setCars}){
   const [postcode, setPostcode] = useState('')
   const [parking, setParking] = useState('yes')
   const [work, setWork] = useState('yes')
@@ -10,6 +10,7 @@ function Form({cars, setCars, chargePoints, setChargePoints}){
   const [otherCar, setOtherCar] = useState('yes')
   const [budget, setBudget] = useState('0-19999')
   const [finalScore, setFinalScore] = useState('')
+  const chargePoints = ''
   //events
   function inputPostcode(e){
     setPostcode(e.target.value);
@@ -29,53 +30,51 @@ function Form({cars, setCars, chargePoints, setChargePoints}){
   function inputBudget(e){
     setBudget(e.target.value);
   };
-  function SearchPostcode(){
-      axios.get(`https://chargepoints.dft.gov.uk/api/retrieve/registry/postcode/${postcode}/dist/5/format/json`)
-      .then(chargers => {
-        const chargerss = chargers.data
-        const numberobj = chargerss.ChargeDevice
-        setChargePoints(Object.keys(numberobj).length);
-      })
-      .catch((err) => console.log(err));
-  };
-  function CalculateScore(){
-    let score = 0
-    if (chargePoints > '99'){
-      score = score+15
-    }
-    if (chargePoints > 9 && chargePoints < 100){
-      score = score+10
-    }
-    if (chargePoints > 4 && chargePoints < 10){
-      score = score+5
-    }
-    if (parking === 'yes'){
-      score=score+40
-    }
-    if (work === 'yes'){
-      score=score+15
-    }
-    if (range === '0-99'){
-      score=score+15
-    }
-    if (range === '100-199'){
-      score=score+10
-    }
-    if (range === '200-299'){
-      score=score+5
-    }
-    if (range === '300+'){
-      score=score-10
-    }
-    if(otherCar === 'yes'){
-      score=score+15
-    }
-    if (budget === '0-19999'){
-      score=score-20
-    }
-    setFinalScore(score)
-    console.log(score)
-  }
+    async function SearchPostcode(){
+        await axios.get(`https://chargepoints.dft.gov.uk/api/retrieve/registry/postcode/${postcode}/dist/5/format/json`)
+        .then(chargers => {
+          const chargerss = chargers.data
+          const numberobj = chargerss.ChargeDevice
+          const chargePoints = (Object.keys(numberobj).length);
+          let score = 0
+          if (chargePoints > '99'){
+            score = score+15
+          }
+          if (chargePoints > 9 && chargePoints < 100){
+            score = score+10
+          }
+          if (chargePoints > 4 && chargePoints < 10){
+            score = score+5
+          }
+          if (parking === 'yes'){
+            score=score+40
+          }
+          if (work === 'yes'){
+            score=score+15
+          }
+          if (range === '0-99'){
+            score=score+15
+          }
+          if (range === '100-199'){
+            score=score+10
+          }
+          if (range === '200-299'){
+            score=score+5
+          }
+          if (range === '300+'){
+            score=score-10
+          }
+          if(otherCar === 'yes'){
+            score=score+15
+          }
+          if (budget === '0-19999'){
+            score=score-20
+          }
+          setFinalScore(score)
+          console.log(score)
+        })
+      };
+
   return(
     <div>
       <form>
@@ -119,8 +118,7 @@ function Form({cars, setCars, chargePoints, setChargePoints}){
           <option value="60000+">60,000+</option>
         </select>
       </form>
-      <button onClick={() => { SearchPostcode(); CalculateScore() }}>Submit</button>
-      <div>Charging points = {chargePoints}</div>
+      <button onClick={SearchPostcode}>Submit</button>
       <div>Your score is {finalScore}</div>
       <div>
         <YourCars cars={cars} setCars={setCars}/>
