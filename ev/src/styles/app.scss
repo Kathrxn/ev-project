@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;;
+}
+
+body{
+  background: #1b1b1b;
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+
+html{
+  @media (max-width: 1700px){
+    font-size: 70%;
+  }
+  @media (max-width: 1300px){
+
+  }
+}
+.app{
+  transition: all 0.5s ease;
+}
+
+p{
+  padding: 3rem 0rem;
+  color: #ccc;
+  font-size: 1.4rem;
+  line-height: 150%;
+}
+
+@import './home';
+@import './form';
