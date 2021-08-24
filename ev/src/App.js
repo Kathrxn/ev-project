@@ -8,16 +8,14 @@ function App() {
     const [cars, setCars] = useState(data());
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Switch>
-          <Route path='/' exact>
-            <Home />
-          </Route>
-          <Route path='/form'>
-            <Form cars={cars} setCars={setCars}/>
-          </Route>
-        </Switch>
-      </BrowserRouter>
+      <Switch>
+        <Route path='/ev-project/' exact>
+          <Home />
+        </Route>
+        <Route path='/form'>
+          <Form cars={cars} setCars={setCars}/>
+        </Route>
+      </Switch>
     </div>
   );
 }
