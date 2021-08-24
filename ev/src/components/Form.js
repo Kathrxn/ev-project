@@ -80,7 +80,6 @@ function Form({cars, setCars}){
     <div>
       <form>
         <label htmlFor="postcode">
-          Postcode
           <h3>What is your postcode?</h3>
           <input
             type='text'
@@ -122,8 +121,6 @@ function Form({cars, setCars}){
       <button onClick={SearchPostcode}>Submit</button>
       <div>Your score is {finalScore}</div>
       <div>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode</div>
-      <div>
-      </div>
     </div>
   )
 }
