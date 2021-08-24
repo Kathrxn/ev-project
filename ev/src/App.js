@@ -9,7 +9,7 @@ function App() {
     const [cars, setCars] = useState(data());
   return (
     <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename={process.env.kathrxn.github.io/ev-project}>
         <Switch>
           <Route path='/' exact>
             <Home />
