@@ -3,13 +3,12 @@ import data from './carList';
 import Form from './components/Form';
 import Home from './components/home';
 import {Switch, Route} from 'react-router-dom';
-import { HashRouter as Router } from 'react-router-dom'
 
 function App() {
     const [cars, setCars] = useState(data());
   return (
     <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path='/' exact>
             <Home />
@@ -18,7 +17,7 @@ function App() {
             <Form cars={cars} setCars={setCars}/>
           </Route>
         </Switch>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
