@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route path='' exact>
+        <Route path='/' exact>
           <Home />
         </Route>
         <Route path='/form'>
