@@ -25,7 +25,6 @@ function YourCars({cars, setCars, range, budget}){
          return (
            <div key={car.name}>
              <div><a href={car.link}>{car.name}</a></div>
-              <img src={car.img} alt='car'/>
               <div>£{car.price.toLocaleString('en-UK')}</div>
             <div>----------------</div>
            </div>
@@ -41,7 +40,6 @@ function YourCars({cars, setCars, range, budget}){
           return (
             <div key={car.name}>
               <div><a href={car.link}>{car.name}</a></div>
-               <img src={car.img} alt='car'/>
                <div>£{car.price.toLocaleString('en-UK')}</div>
              <div>----------------</div>
             </div>
@@ -57,7 +55,6 @@ function YourCars({cars, setCars, range, budget}){
            return (
              <div key={car.name}>
                <div><a href={car.link}>{car.name}</a></div>
-                <img src={car.img} alt='car'/>
                 <div>£{car.price.toLocaleString('en-UK')}</div>
               <div>----------------</div>
              </div>
@@ -73,7 +70,6 @@ function YourCars({cars, setCars, range, budget}){
             return (
               <div key={car.name}>
                 <div><a href={car.link}>{car.name}</a></div>
-                 <img src={car.img} alt='car'/>
                  <div>£{car.price.toLocaleString('en-UK')}</div>
                <div>----------------</div>
               </div>
@@ -89,7 +85,6 @@ function YourCars({cars, setCars, range, budget}){
              return (
                <div key={car.name}>
                  <div><a href={car.link}>{car.name}</a></div>
-                  <img src={car.img} alt='car'/>
                   <div>£{car.price.toLocaleString('en-UK')}</div>
                 <div>----------------</div>
                </div>
@@ -105,7 +100,6 @@ function YourCars({cars, setCars, range, budget}){
               return (
                 <div key={car.name}>
                   <div><a href={car.link}>{car.name}</a></div>
-                   <img src={car.img} alt='car'/>
                    <div>£{car.price.toLocaleString('en-UK')}</div>
                  <div>----------------</div>
                 </div>
@@ -121,7 +115,6 @@ function YourCars({cars, setCars, range, budget}){
                return (
                  <div key={car.name}>
                    <div><a href={car.link}>{car.name}</a></div>
-                    <img src={car.img} alt='car'/>
                     <div>£{car.price.toLocaleString('en-UK')}</div>
                   <div>----------------</div>
                  </div>
@@ -137,7 +130,6 @@ function YourCars({cars, setCars, range, budget}){
                 return (
                   <div key={car.name}>
                     <div><a href={car.link}>{car.name}</a></div>
-                     <img src={car.img} alt='car'/>
                      <div>£{car.price.toLocaleString('en-UK')}</div>
                    <div>----------------</div>
                   </div>
@@ -153,7 +145,6 @@ function YourCars({cars, setCars, range, budget}){
                  return (
                    <div key={car.name}>
                      <div><a href={car.link}>{car.name}</a></div>
-                      <img src={car.img} alt='car'/>
                       <div>£{car.price.toLocaleString('en-UK')}</div>
                     <div>----------------</div>
                    </div>
