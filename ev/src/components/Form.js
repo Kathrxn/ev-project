@@ -43,49 +43,64 @@ function Form({cars, setCars}){
   }
   function notSubmitted(){
     return(
-    <div>
-      <form>
-        <label htmlFor="postcode">
-          <h3>What is your postcode?</h3>
-          <input
-            type='text'
-            postcode='postcode'
-            value={postcode}
-            onChange={inputPostcode}
-          />
-        </label>
-        <h3>Do you have off-street parking available at your home?</h3>
-        <select value={parking} onChange={inputParking} id="dropdown">
-          <option value="yes">Yes</option>
-          <option value="no">No</option>
-        </select>
-        <h3>Do you have EV charging points available at your work place?</h3>
-        <select value={work} onChange={inputWork} id="dropdown">
-          <option value="yes">Yes</option>
-          <option value="no">No</option>
-        </select>
-        <h3>What range would you need your EV to do on a full single charge? (miles)</h3>
-        <select value={range} onChange={inputRange} id="dropdown">
-          <option value="0-99">0-99</option>
-          <option value="100-199">100-199</option>
-          <option value="200-299">200-299</option>
-          <option value="300+">300+</option>
-        </select>
-        <h3>If you were to buy an EV would there also be a petrol/diesel car at your household?</h3>
-        <select value={otherCar} onChange={inputOtherCar} id="dropdown">
-          <option value="yes">Yes</option>
-          <option value="no">No</option>
-        </select>
-        <h3>What would be your budget to buy a brand new EV?(GBP)</h3>
-        <select value={budget} onChange={inputBudget} id="dropdown">
-          <option value="0-19999">0-19,999</option>
-          <option value="20000-39999">20,000-39,999</option>
-          <option value="40000-59999">40,000-59,999</option>
-          <option value="60000+">60,000+</option>
-        </select>
-      </form>
-        <button onClick={() => { SearchPostcode(); setIsSubmitted(true);}}>Submit</button>
-      </div>
+    <div className='wholeform'>
+      <div className='carform'>
+        <form>
+          <div className='question'>
+            <label htmlFor="postcode">
+              <h3 className='qs'>What is your postcode?</h3>
+              <input
+                placeholder='Enter Postcode'
+                type='text'
+                postcode='postcode'
+                value={postcode}
+                onChange={inputPostcode}
+              />
+            </label>
+         </div>
+         <div className='question'>
+            <h3 className='qs'>Do you have off-street parking available at your home?</h3>
+            <select value={parking} onChange={inputParking} id="dropdown">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+         </div>
+         <div className='question'>
+            <h3 className='qs'>Do you have EV charging points available at your work place?</h3>
+            <select value={work} onChange={inputWork} id="dropdown">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+         </div>
+         <div className='question'>
+            <h3 className='qs'>What range would you need your EV to do on a full single charge? (miles)</h3>
+            <select value={range} onChange={inputRange} id="dropdown">
+              <option value="0-99">0-99</option>
+              <option value="100-199">100-199</option>
+              <option value="200-299">200-299</option>
+              <option value="300+">300+</option>
+            </select>
+         </div>
+         <div className='question'>
+            <h3 className='qs'>If you were to buy an EV would there also be a petrol/diesel car at your household?</h3>
+            <select value={otherCar} onChange={inputOtherCar} id="dropdown">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+         </div>
+         <div className='question'>
+            <h3 className='qs'>What would be your budget to buy a brand new EV?(GBP)</h3>
+            <select value={budget} onChange={inputBudget} id="dropdown">
+              <option value="0-19999">0-19,999</option>
+              <option value="20000-39999">20,000-39,999</option>
+              <option value="40000-59999">40,000-59,999</option>
+              <option value="60000+">60,000+</option>
+            </select>
+         </div>
+        </form>
+        </div>
+          <button className='buttonnn' onClick={() => { SearchPostcode(); setIsSubmitted(true);}}>Submit</button>
+    </div>
     )
   }
     async function SearchPostcode(){
@@ -126,7 +141,7 @@ function Form({cars, setCars}){
             score=score+15
           }
           if (budget === '0-19999'){
-            score=score-20
+            score=score-15
           }
           setFinalScore(score)
           setNoOfChargers(chargePoints)

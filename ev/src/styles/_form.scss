@@ -1,0 +1,71 @@
+
+.carform{
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 30%;
+  color: white;
+}
+
+.buttonnn{
+  margin: 0% 30%;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 3px solid #23d997;
+  background: transparent;
+  color: white;
+  transition: all 0.5s ease;
+  &:hover{
+    background-color: #23d997;
+    color: white;
+  }
+}
+
+.question{
+  margin-top: 5%;
+}
+
+.qs{
+  margin-bottom: 2%;
+  h3{
+    font-size: 2rem;
+  }
+}
+
+input{
+  font-size: 1.1rem;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  z-index: 2;
+  border: 2px solid #23d997;
+  background: transparent;
+  color: white;
+  transition: all 0.5s ease;
+  &:hover{
+    background: #1b1b1b;
+    color: white;
+    cursor: pointer;
+ }
+}
+select {
+  font-size: 1.1rem;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  z-index: 2;
+  border: 2px solid #23d997;
+  background: transparent;
+  color: white;
+  transition: all 0.5s ease;
+  &:hover{
+    background: #1b1b1b ;
+    color: white;
+    cursor: pointer;
+ }
+}
