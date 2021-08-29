@@ -69,3 +69,120 @@ select {
     cursor: pointer;
  }
 }
+
+.box-red{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-red:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(20px);
+    background: linear-gradient(135deg, #ff0000, #990000);
+}
+
+.box-red:nth-child(1),.box:nth-child(1)::before{
+    background: linear-gradient(135deg, #ff0000, #990000);
+    z-index: 0;
+    border-radius: 25px;
+}
+
+.card-red{
+  background-color: #1b1b1b;
+  z-index: -100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 7% 30%;
+  border-radius: 25px;
+  border: 3px solid #ff0000;
+}
+
+.box-yellow{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-yellow:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(20px);
+    background: linear-gradient(135deg, #ffdd00, #fbb034);
+}
+
+.box-yellow:nth-child(1),.box:nth-child(1)::before{
+    background: linear-gradient(135deg, #ffdd00, #fbb034);
+    z-index: 0;
+    border-radius: 25px;
+}
+
+.card-yellow{
+  background-color: #1b1b1b;
+  z-index: -100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 7% 30%;
+  border-radius: 25px;
+  border: 3px solid #ffdd00;
+}
+
+.box-green{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-green:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(20px);
+    background: linear-gradient(135deg, #5aff15, #00b712);
+}
+
+.box-green:nth-child(1),.box:nth-child(1)::before{
+    background: linear-gradient(135deg, #5aff15, #00b712);
+    z-index: 0;
+    border-radius: 25px;
+}
+
+.card-green{
+  background-color: #1b1b1b;
+  z-index: -100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 7% 30%;
+  border-radius: 25px;
+  border: 3px solid #5aff15;
+}
+
+.score{
+  z-index: 100;
+  font-size: 9rem;
+  color: white;
+}

@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import YourCars from './YourCars';
 import axios from 'axios';
+import {motion} from 'framer-motion';
+import {pageAnimation} from '../animation';
 
 function Form({cars, setCars}){
   const [postcode, setPostcode] = useState('')
@@ -33,17 +35,48 @@ function Form({cars, setCars}){
     setBudget(e.target.value);
   };
   function submitted(){
+    if(finalScore < 30){
     return(
-      <div>
-        <div>Your score is {finalScore}</div>
-        <div>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode</div>
-        <YourCars cars={cars} setCars={setCars} range={range} budget={budget}/>
-      </div>
+      <motion.div variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
+       <div className='card-red'>
+          <div className='box-red'>
+            <p className='score'>{finalScore}</p>
+          </div>
+          <div>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode</div>
+        </div>
+          <YourCars cars={cars} setCars={setCars} range={range} budget={budget}/>
+      </motion.div>
     )
   }
+  if(finalScore > 29 && finalScore < 70){
+    return(
+      <motion.div variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
+       <div className='card-yellow'>
+          <div className='box-yellow'>
+            <p className='score'>{finalScore}</p>
+          </div>
+          <div>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode</div>
+        </div>
+          <YourCars cars={cars} setCars={setCars} range={range} budget={budget}/>
+      </motion.div>
+    )
+  }
+  if(finalScore > 69){
+    return(
+      <motion.div variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
+       <div className='card-green'>
+          <div className='box-green'>
+            <p className='score'>{finalScore}</p>
+          </div>
+          <div>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode.</div>
+        </div>
+          <YourCars cars={cars} setCars={setCars} range={range} budget={budget}/>
+      </motion.div>
+    )
+  }}
   function notSubmitted(){
     return(
-    <div className='wholeform'>
+    <motion.div variants={pageAnimation} initial='hidden' animate='show' exit='exit' className='wholeform'>
       <div className='carform'>
         <form>
           <div className='question'>
@@ -100,7 +133,7 @@ function Form({cars, setCars}){
         </form>
         </div>
           <button className='buttonnn' onClick={() => { SearchPostcode(); setIsSubmitted(true);}}>Submit</button>
-    </div>
+    </motion.div>
     )
   }
     async function SearchPostcode(){
