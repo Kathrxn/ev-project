@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import YourCars from './YourCars';
 import axios from 'axios';
 import {motion} from 'framer-motion';
-import {pageAnimation} from '../animation';
+import {pageAnimation,photoAnim} from '../animation';
 
 function Form({cars, setCars}){
   const [postcode, setPostcode] = useState('')
@@ -37,41 +37,41 @@ function Form({cars, setCars}){
   function submitted(){
     if(finalScore < 30){
     return(
-      <motion.div variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
-       <div className='card-red'>
+      <div>
+       <motion.div variants={pageAnimation} className='card-red'>
           <div className='box-red'>
             <p className='score'>{finalScore}</p>
           </div>
           <div>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode</div>
-        </div>
+        </motion.div>
           <YourCars cars={cars} setCars={setCars} range={range} budget={budget}/>
-      </motion.div>
+      </div>
     )
   }
   if(finalScore > 29 && finalScore < 70){
     return(
-      <motion.div variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
-       <div className='card-yellow'>
+      <div>
+       <motion.div variants={pageAnimation} className='card-yellow'>
           <div className='box-yellow'>
             <p className='score'>{finalScore}</p>
           </div>
           <div>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode</div>
-        </div>
+        </motion.div>
           <YourCars cars={cars} setCars={setCars} range={range} budget={budget}/>
-      </motion.div>
+      </div>
     )
   }
   if(finalScore > 69){
     return(
-      <motion.div variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
-       <div className='card-green'>
+      <div>
+       <motion.div variants={pageAnimation} className='card-green'>
           <div className='box-green'>
             <p className='score'>{finalScore}</p>
           </div>
           <div>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode.</div>
-        </div>
+        </motion.div>
           <YourCars cars={cars} setCars={setCars} range={range} budget={budget}/>
-      </motion.div>
+      </div>
     )
   }}
   function notSubmitted(){
@@ -182,9 +182,9 @@ function Form({cars, setCars}){
       };
 
   return(
-    <div>
+    <motion.div variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
       {isSubmitted ?  submitted() : notSubmitted()}
-    </div>
+    </motion.div>
   )
 }
 
