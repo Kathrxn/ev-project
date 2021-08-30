@@ -29,5 +29,14 @@ p{
   line-height: 150%;
 }
 
+.card{
+  background: darkblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3% 45%;
+  padding-right: 0%;
+}
+
 @import './home';
 @import './form';
