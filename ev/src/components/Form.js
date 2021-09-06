@@ -43,8 +43,8 @@ function Form({cars, setCars}){
             <p className='score'>{finalScore}</p>
           </div>
           <div>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode</div>
-          <YourCars cars={cars} setCars={setCars} range={range} budget={budget}/>
         </motion.div>
+        <YourCars cars={cars} setCars={setCars} range={range} budget={budget}/>
       </div>
     )
   }
@@ -137,7 +137,7 @@ function Form({cars, setCars}){
     )
   }
     async function SearchPostcode(){
-        await axios.get(`https://cors-anywhere.herokuapp.com/https://chargepoints.dft.gov.uk/api/retrieve/registry/postcode/${postcode}/dist/5/format/json`)
+        await axios.get(`https://thingproxy.freeboard.io/fetch/https://chargepoints.dft.gov.uk/api/retrieve/registry/postcode/${postcode}/dist/5/format/json`)
         .then(chargers => {
           const chargerss = chargers.data
           const numberobj = chargerss.ChargeDevice
