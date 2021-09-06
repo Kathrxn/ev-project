@@ -137,7 +137,7 @@ function Form({cars, setCars}){
     )
   }
     async function SearchPostcode(){
-        await axios.get(`https://chargepoints.dft.gov.uk/api/retrieve/registry/postcode/${postcode}/dist/5/format/json`)
+        await axios.get(`https://cors-anywhere.herokuapp.com/https://chargepoints.dft.gov.uk/api/retrieve/registry/postcode/${postcode}/dist/5/format/json`)
         .then(chargers => {
           const chargerss = chargers.data
           const numberobj = chargerss.ChargeDevice
