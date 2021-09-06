@@ -43,8 +43,8 @@ function Form({cars, setCars}){
             <p className='score'>{finalScore}</p>
           </div>
           <div>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode</div>
-        </motion.div>
           <YourCars cars={cars} setCars={setCars} range={range} budget={budget}/>
+        </motion.div>
       </div>
     )
   }
