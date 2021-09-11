@@ -56,6 +56,37 @@ p{
   }
 }
 
+.morecard{
+  border: 3px solid #23d997;
+  text-align: center;
+  border-radius: 15px;
+  margin: 3% 10%;
+  padding: 5% 3%;
+}
+
+.morep{
+  padding: 1.5rem 0rem;
+  color: #ccc;
+  font-size: 1.4rem;
+  line-height: 150%;
+}
+
+.moreplast{
+  padding: 1.5rem 0rem;
+  color: #ccc;
+  font-size: 1.4rem;
+  line-height: 150%;
+  padding-bottom: 3rem;
+}
+
+.moreinfo{
+  padding-top: 2.5rem;
+  color: #ccc;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+
 .cards{
   max-width: 1000px;
   align-items: center;
