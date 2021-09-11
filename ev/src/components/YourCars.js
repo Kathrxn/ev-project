@@ -8,9 +8,10 @@ function YourCars({cars, setCars, range, budget}){
          if(car.price < 20000 && car.name.includes('coming') === false && car.name.includes('from') === false && car.name.includes('later') === false){
          return (
              <div className='card' key={car.name}>
-               <div><a href={car.link}>{car.name}</a></div>
-                <div>£{car.price.toLocaleString('en-UK')}</div>
-              <div>----------------</div>
+               <div>{car.name}</div>
+               <div>Range:  {car.range}</div>
+                <div>Price:  £{car.price.toLocaleString('en-UK')}</div>
+                <div><a href={car.link}>More Info --></a></div>
              </div>
          )
        }})}
@@ -24,9 +25,10 @@ function YourCars({cars, setCars, range, budget}){
          return (
           <div className='card'>
            <div key={car.name}>
-             <div><a href={car.link}>{car.name}</a></div>
-              <div>£{car.price.toLocaleString('en-UK')}</div>
-            <div>----------------</div>
+             <div>{car.name}</div>
+             <div>Range:  {car.range}</div>
+              <div>Price:  £{car.price.toLocaleString('en-UK')}</div>
+              <div><a href={car.link}>More Info --></a></div>
            </div>
          </div>
          )
@@ -41,9 +43,10 @@ function YourCars({cars, setCars, range, budget}){
           return (
            <div className='card'>
             <div key={car.name}>
-              <div><a href={car.link}>{car.name}</a></div>
-               <div>£{car.price.toLocaleString('en-UK')}</div>
-             <div>----------------</div>
+              <div>{car.name}</div>
+              <div>Range:  {car.range}</div>
+               <div>Price:  £{car.price.toLocaleString('en-UK')}</div>
+               <div><a href={car.link}>More Info --></a></div>
             </div>
           </div>
           )
@@ -58,9 +61,10 @@ function YourCars({cars, setCars, range, budget}){
            return (
              <div className='card'>
              <div key={car.name}>
-               <div><a href={car.link}>{car.name}</a></div>
-                <div>£{car.price.toLocaleString('en-UK')}</div>
-              <div>----------------</div>
+               <div>{car.name}</div>
+               <div>Range:  {car.range}</div>
+                <div>Price:  £{car.price.toLocaleString('en-UK')}</div>
+                <div><a href={car.link}>More Info --></a></div>
              </div>
            </div>
            )
@@ -75,9 +79,10 @@ function YourCars({cars, setCars, range, budget}){
             return (
              <div className='card'>
               <div key={car.name}>
-                <div><a href={car.link}>{car.name}</a></div>
-                 <div>£{car.price.toLocaleString('en-UK')}</div>
-               <div>----------------</div>
+                <div>{car.name}</div>
+                <div>Range:  {car.range}</div>
+                 <div>Price:  £{car.price.toLocaleString('en-UK')}</div>
+                 <div><a href={car.link}>More Info --></a></div>
               </div>
             </div>
             )
@@ -92,9 +97,10 @@ function YourCars({cars, setCars, range, budget}){
              return (
               <div className='card'>
                <div key={car.name}>
-                 <div><a href={car.link}>{car.name}</a></div>
-                  <div>£{car.price.toLocaleString('en-UK')}</div>
-                <div>----------------</div>
+                 <div>{car.name}</div>
+                 <div>Range:  {car.range}</div>
+                  <div>Price:  £{car.price.toLocaleString('en-UK')}</div>
+                  <div><a href={car.link}>More Info --></a></div>
                </div>
              </div>
              )
@@ -109,9 +115,10 @@ function YourCars({cars, setCars, range, budget}){
               return (
                <div className='card'>
                 <div key={car.name}>
-                  <div><a href={car.link}>{car.name}</a></div>
-                   <div>£{car.price.toLocaleString('en-UK')}</div>
-                 <div>----------------</div>
+                  <div>{car.name}</div>
+                  <div>Range:  {car.range}</div>
+                   <div>Price:  £{car.price.toLocaleString('en-UK')}</div>
+                   <div><a href={car.link}>More Info --></a></div>
                 </div>
               </div>
               )
@@ -121,14 +128,15 @@ function YourCars({cars, setCars, range, budget}){
         if (range === '200-299' && budget === '20000-39999')
           return (
             <div className='cards'>
-             {cars.slice(0,5).map(car => {
+             {cars.slice(0,25).map(car => {
                if(car.price < 40000 && car.price > 19999 && car.range > 199 && car.name.includes('coming') === false && car.name.includes('from') === false && car.name.includes('later') === false){
                return (
                 <div className='card'>
                  <div key={car.name}>
-                   <div><a href={car.link}>{car.name}</a></div>
-                    <div>£{car.price.toLocaleString('en-UK')}</div>
-                  <div>----------------</div>
+                   <div>{car.name}</div>
+                   <div>Range:  {car.range}</div>
+                    <div>Price:  £{car.price.toLocaleString('en-UK')}</div>
+                    <div><a href={car.link}>More Info --></a></div>
                  </div>
                 </div>
                )
@@ -143,9 +151,10 @@ function YourCars({cars, setCars, range, budget}){
                 return (
                  <div className='card'>
                   <div key={car.name}>
-                    <div><a href={car.link}>{car.name}</a></div>
-                     <div>£{car.price.toLocaleString('en-UK')}</div>
-                   <div>----------------</div>
+                    <div>{car.name}</div>
+                    <div>Range:  {car.range}</div>
+                     <div>Price:  £{car.price.toLocaleString('en-UK')}</div>
+                     <div><a href={car.link}>More Info --></a></div>
                   </div>
                  </div>
                 )
@@ -160,9 +169,10 @@ function YourCars({cars, setCars, range, budget}){
                  return (
                   <div className='card'>
                    <div key={car.name}>
-                     <div><a href={car.link}>{car.name}</a></div>
-                      <div>£{car.price.toLocaleString('en-UK')}</div>
-                    <div>----------------</div>
+                     <div>{car.name}</div>
+                     <div>Range:  {car.range}</div>
+                      <div>Price:  £{car.price.toLocaleString('en-UK')}</div>
+                      <div><a href={car.link}>More Info --></a></div>
                    </div>
                   </div>
                  )

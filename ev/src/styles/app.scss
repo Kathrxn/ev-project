@@ -4,6 +4,10 @@
   box-sizing: border-box;;
 }
 
+div{
+  font-size: 1.2rem;
+}
+
 body{
   background: #1b1b1b;
   font-family: 'Inter', sans-serif;
@@ -35,6 +39,21 @@ p{
   border-radius: 15px;
   margin: 3% 10%;
   padding: 5% 3%;
+  &:hover{
+    background-color: #23d997;
+    color: white;
+  }
+  div{
+    margin: 4% 0%;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    padding: 0% 2%;
+    background-color: #23d997;
+    border: 1px solid #23d997;
+    border-radius: 8px;
+  }
 }
 
 .cards{

@@ -132,7 +132,7 @@ function Form({cars, setCars}){
          </div>
         </form>
         </div>
-          <button className='buttonnn' onClick={() => { SearchPostcode(); setIsSubmitted(true);}}>Submit</button>
+          <div className='bcenter'><button className='buttonnn' onClick={() => { SearchPostcode(); setIsSubmitted(true);}}>Submit</button></div>
     </motion.div>
     )
   }

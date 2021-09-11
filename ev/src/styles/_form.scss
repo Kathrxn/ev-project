@@ -3,12 +3,15 @@
   min-height: 90vh;
   display: flex;
   align-items: center;
+  align-content: center;
+  margin: 0% 30%;
   justify-content: space-between;
-  padding: 0% 30%;
   color: white;
+  margin-bottom: 0%;
 }
 
 .buttonnn{
+  border-radius: 8px;
   margin: 0% 30%;
   text-decoration: none;
   font-weight: bold;
@@ -28,6 +31,20 @@
 
 .question{
   margin-top: 5%;
+  text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  .question { width: 200px; }
+}
+
+@media (min-width: 600px) {
+  .question { width: 400px; }
+}
+
+@media (min-width: 900px) {
+  .question { width: 775px; }
 }
 
 .qs{
@@ -38,12 +55,13 @@
 }
 
 input{
+  width: 775px;
   font-size: 1.1rem;
   top: 100%;
   left: 0;
-  width: 300px;
   z-index: 2;
   border: 2px solid #23d997;
+  border-radius: 8px;
   background: transparent;
   color: white;
   transition: all 0.5s ease;
@@ -53,13 +71,27 @@ input{
     cursor: pointer;
  }
 }
+
+@media (max-width: 600px) {
+  input { width: 200px; }
+}
+
+@media (min-width: 600px) {
+  input { width: 400px; }
+}
+
+@media (min-width: 900px) {
+  input { width: 775px; }
+}
+
 select {
   font-size: 1.1rem;
   top: 100%;
   left: 0;
-  width: 300px;
+  width: 775px;
   z-index: 2;
   border: 2px solid #23d997;
+  border-radius: 8px;
   background: transparent;
   color: white;
   transition: all 0.5s ease;
@@ -68,6 +100,18 @@ select {
     color: white;
     cursor: pointer;
  }
+}
+
+@media (max-width: 600px) {
+  select { width: 200px; }
+}
+
+@media (min-width: 600px) {
+  select { width: 400px; }
+}
+
+@media (min-width: 900px) {
+  select { width: 775px; }
 }
 
 .box-red{
@@ -185,4 +229,10 @@ select {
   z-index: 100;
   font-size: 9rem;
   color: white;
+}
+
+
+
+.bcenter{
+  text-align: center;
 }
