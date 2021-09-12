@@ -181,8 +181,12 @@ function YourCars({cars, setCars, range, budget}){
            );
          }else{
            return(
-             <div>
-               <p>There are no current EVs that match your budget and range requiremnts</p>
+             <div className='noresult'>
+               <div className='cont'>There are currently no EVs for sale in the UK that macth your requirements.</div>
+               <div className='cont'>In the near future EVs are expected to reach a range of 300+ miles.</div>
+               <br/>
+               <div className='cont'>If your looking for a cheaper EV there are some second-hand vehicles available, however the current market is very small.</div>
+               <div className='cont'>As EVs rise in popularity it is expected there will be a bigger second-hand market.</div>
              </div>
            )
          }

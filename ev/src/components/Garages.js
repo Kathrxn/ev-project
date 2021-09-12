@@ -16,7 +16,7 @@ function Garages(){
         <div className="header"> Garages </div>
         <div className="content">
           {' '}
-          <div className='cont'>Many EV dealerships offer free servicing and MOTs for 2 years with the purchase of a vehicle.However, after the free time period is up many owners prefer to use an independent garage.</div>
+          <div className='cont'>Many EV dealerships offer free servicing and MOTs for 2 years with the purchase of a vehicle. However, after the free time period is up many owners prefer to use an independent garage.</div>
           <br />
           <div className='cont'>You might want to consider how close your nearest independent EV garage is to your home. HEVRA provide an interactive map of all EV friendly garages in the UK.</div>
           <br/>

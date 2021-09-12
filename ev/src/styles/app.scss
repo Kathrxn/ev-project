@@ -96,7 +96,8 @@ p{
 }
 
 .modal {
-  background-color: #1b1b1b;
+  max-width: 900px;
+  background-color: #686868;
   text-align: center;
   align-items: center;
   margin: 0% 20%;
@@ -137,7 +138,7 @@ p{
   top: -10px;
   font-size: 24px;
   border-radius: 18px;
-  background: grey;
+  background: lightgray;
 }
 .popupbutton{
   -webkit-box-flex: 1 1 auto;
@@ -190,6 +191,12 @@ li{
 
 .cont{
   padding-top: 0% !important;
+}
+
+.noresult{
+  text-align: center;
+  padding: 0% 20%;
+  padding-bottom: 3%!important;
 }
 
 @media (max-width: 600px) {

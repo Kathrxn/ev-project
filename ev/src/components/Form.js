@@ -49,9 +49,11 @@ function Form({cars, setCars}){
         </motion.div>
         <YourCars cars={cars} setCars={setCars} range={range} budget={budget}/>
         <h3 className='othertitle'>Other Things To Consider</h3>
-        <Other/>
-        <Garages/>
-        <Grants/>
+        <div className="flex">
+          <Other/>
+          <Garages/>
+          <Grants/>
+        </div>
       </div>
     )
   }
@@ -65,10 +67,12 @@ function Form({cars, setCars}){
           <div>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode</div>
         </motion.div>
           <YourCars cars={cars} setCars={setCars} range={range} budget={budget}/>
-          <h3 className='othertitle'>Other Things To Consider</h3>
-          <Other/>
-          <Garages/>
-          <Grants/>
+          <h3 className='othertitle'>Other Things To Consider When Pruchasing An EV</h3>
+          <div className="flex">
+            <Other/>
+            <Garages/>
+            <Grants/>
+          </div>
       </div>
     )
   }
