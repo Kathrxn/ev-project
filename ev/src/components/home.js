@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import evs from '../styles/evs.jpg';
+import evcharger from '../styles/evcharger.PNG';
 import {motion} from 'framer-motion';
 import {photoAnim} from '../animation'
 import {pageAnimation} from '../animation';
@@ -16,7 +16,7 @@ function Home(){
           <Link className='buttonnnn' to='/more'>More Info</Link>
       </div>
       <div className='image'>
-        <motion.img variants={photoAnim} src={evs} alt="electric car"/>
+        <motion.img variants={photoAnim} src={evcharger} alt="electric car"/>
       </div>
     </div>
   </motion.div>
