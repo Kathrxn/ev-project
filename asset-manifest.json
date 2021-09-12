@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ev-project/static/css/main.50fce05b.chunk.css",
+    "main.css": "/ev-project/static/css/main.87456a51.chunk.css",
     "main.js": "/ev-project/static/js/main.3192024f.chunk.js",
     "main.js.map": "/ev-project/static/js/main.3192024f.chunk.js.map",
     "runtime-main.js": "/ev-project/static/js/runtime-main.0aa41bfb.js",
@@ -10,14 +10,14 @@
     "static/js/3.b71214d2.chunk.js": "/ev-project/static/js/3.b71214d2.chunk.js",
     "static/js/3.b71214d2.chunk.js.map": "/ev-project/static/js/3.b71214d2.chunk.js.map",
     "index.html": "/ev-project/index.html",
-    "static/css/main.50fce05b.chunk.css.map": "/ev-project/static/css/main.50fce05b.chunk.css.map",
+    "static/css/main.87456a51.chunk.css.map": "/ev-project/static/css/main.87456a51.chunk.css.map",
     "static/js/2.db225dca.chunk.js.LICENSE.txt": "/ev-project/static/js/2.db225dca.chunk.js.LICENSE.txt",
     "static/media/evcharger.1993c11d.PNG": "/ev-project/static/media/evcharger.1993c11d.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.0aa41bfb.js",
     "static/js/2.db225dca.chunk.js",
-    "static/css/main.50fce05b.chunk.css",
+    "static/css/main.87456a51.chunk.css",
     "static/js/main.3192024f.chunk.js"
   ]
 }
