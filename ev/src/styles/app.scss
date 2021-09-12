@@ -97,12 +97,12 @@ p{
 
 .modal {
   max-width: 900px;
-  background-color: #686868;
+  background-color: #4e5954;
   text-align: center;
   align-items: center;
   margin: 0% 20%;
   font-size: 12px;
-  border: 3px solid #23d997;
+  border: 1px solid white;
   border-radius: 8px;
 }
 .modal > .header {
@@ -129,6 +129,7 @@ p{
   text-align: center;
 }
 .modal > .close {
+  opacity: 5;
   cursor: pointer;
   float: right;
   display: block;
@@ -138,7 +139,8 @@ p{
   top: -10px;
   font-size: 24px;
   border-radius: 18px;
-  background: lightgray;
+  border: 1px solid white;
+  background-color: #ffffff;
 }
 .popupbutton{
   -webkit-box-flex: 1 1 auto;
@@ -147,6 +149,7 @@ p{
     -ms-flex:  1 1 auto;
     flex:  1 1 auto;
   margin: 3%;
+  margin-top: 2%;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;

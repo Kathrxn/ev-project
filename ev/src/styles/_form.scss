@@ -1,11 +1,12 @@
 
 .carform{
+  overflow: hidden;
   min-height: 90vh;
   display: flex;
   align-items: center;
   align-content: center;
-  margin: 0% 30%;
-  justify-content: space-between;
+  margin: auto;
+  justify-content: space-around;
   color: white;
   margin-bottom: 0%;
 }
@@ -36,7 +37,7 @@
 
 
 @media (max-width: 600px) {
-  .question { width: 200px; }
+  .question { width: 300px; }
 }
 
 @media (min-width: 600px) {
@@ -73,7 +74,7 @@ input{
 }
 
 @media (max-width: 600px) {
-  input { width: 200px; }
+  input { width: 300px; }
 }
 
 @media (min-width: 600px) {
@@ -103,9 +104,17 @@ select {
 }
 
 @media (max-width: 600px) {
-  select { width: 200px; }
+  select { width: 300px; }
+  .card-red{
+    margin: 7% 10%!important;
+ }
+ .card-yellow{
+   margin: 7% 10%!important;
 }
-
+.card-green{
+  margin: 7% 10%!important;
+}
+}
 @media (min-width: 600px) {
   select { width: 400px; }
 }
@@ -118,7 +127,7 @@ select {
     position: relative;
     width: 300px;
     height: 200px;
-    margin: 40px;
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,7 +229,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 7% 30%;
+  margin: 4% 30%;
   border-radius: 25px;
   border: 3px solid #5aff15;
 }
