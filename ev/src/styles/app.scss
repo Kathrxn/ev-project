@@ -34,7 +34,7 @@ p{
 }
 
 .card{
-  border: 3px solid #23d997;
+  border: 3px dashed #23d997;
   text-align: center;
   border-radius: 15px;
   margin: 3% 10%;
@@ -93,6 +93,107 @@ p{
   margin: 0 auto;
   display: grid;
   padding: 0;
+}
+
+.modal {
+  background-color: #1b1b1b;
+  text-align: center;
+  align-items: center;
+  margin: 0% 20%;
+  font-size: 12px;
+  border: 3px solid #23d997;
+  border-radius: 8px;
+}
+.modal > .header {
+  font-weight: bold;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px;
+  a{
+    text-decoration-color: #23d997;
+    text-decoration-line: none;
+    color: #23d997;
+  }
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  float: right;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  border-radius: 18px;
+  background: grey;
+}
+.popupbutton{
+  -webkit-box-flex: 1 1 auto;
+    -moz-box-flex:  1 1 auto;
+    -webkit-flex:  1 1 auto;
+    -ms-flex:  1 1 auto;
+    flex:  1 1 auto;
+  margin: 3%;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 3px solid #23d997;
+  background: transparent;
+  color: white;
+  transition: all 0.5s ease;
+  &:hover{
+    background-color: #23d997;
+    color: white;
+  }
+}
+
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.modal > .headerafter {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+
+ul {
+   list-style-position: inside;
+}
+
+li{
+  padding: 2% 0%;
+}
+
+.cont{
+  padding-top: 0% !important;
+}
+
+@media (max-width: 600px) {
+  .popupbutton { margin: 5%;}
 }
 
 @media (min-width: 600px) {

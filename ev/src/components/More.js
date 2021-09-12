@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom';
 function More(){
   return(
     <div>
-      <h3 className='moreinfo'>More Info</h3>
       <div className="morecard">
         <p className='morep'>This website aims to provide you with an answer to the question 'Is an Electric Car Right for you?'</p>
         <p className='morep'>You will be asked 6 questions to determine how suitbale electric car is for you.</p>

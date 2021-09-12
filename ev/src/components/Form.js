@@ -1,5 +1,8 @@
 import React, {useState} from 'react';
 import YourCars from './YourCars';
+import Other from './Other';
+import Garages from './Garages'
+import Grants from './Grants';
 import axios from 'axios';
 import {motion} from 'framer-motion';
 import {pageAnimation,photoAnim} from '../animation';
@@ -45,6 +48,10 @@ function Form({cars, setCars}){
           <div>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode</div>
         </motion.div>
         <YourCars cars={cars} setCars={setCars} range={range} budget={budget}/>
+        <h3 className='othertitle'>Other Things To Consider</h3>
+        <Other/>
+        <Garages/>
+        <Grants/>
       </div>
     )
   }
@@ -58,6 +65,10 @@ function Form({cars, setCars}){
           <div>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode</div>
         </motion.div>
           <YourCars cars={cars} setCars={setCars} range={range} budget={budget}/>
+          <h3 className='othertitle'>Other Things To Consider</h3>
+          <Other/>
+          <Garages/>
+          <Grants/>
       </div>
     )
   }
@@ -71,6 +82,12 @@ function Form({cars, setCars}){
           <div>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode.</div>
         </motion.div>
           <YourCars cars={cars} setCars={setCars} range={range} budget={budget}/>
+          <h3 className='othertitle'>Other Things To Consider</h3>
+          <div className="flex">
+            <Other/>
+            <Garages/>
+            <Grants/>
+          </div>
       </div>
     )
   }}
