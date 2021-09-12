@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ev-project/static/css/main.e80f4797.chunk.css",
-    "main.js": "/ev-project/static/js/main.ead0804e.chunk.js",
-    "main.js.map": "/ev-project/static/js/main.ead0804e.chunk.js.map",
+    "main.css": "/ev-project/static/css/main.eed0368b.chunk.css",
+    "main.js": "/ev-project/static/js/main.a43fad55.chunk.js",
+    "main.js.map": "/ev-project/static/js/main.a43fad55.chunk.js.map",
     "runtime-main.js": "/ev-project/static/js/runtime-main.0aa41bfb.js",
     "runtime-main.js.map": "/ev-project/static/js/runtime-main.0aa41bfb.js.map",
     "static/js/2.db225dca.chunk.js": "/ev-project/static/js/2.db225dca.chunk.js",
@@ -10,13 +10,14 @@
     "static/js/3.b71214d2.chunk.js": "/ev-project/static/js/3.b71214d2.chunk.js",
     "static/js/3.b71214d2.chunk.js.map": "/ev-project/static/js/3.b71214d2.chunk.js.map",
     "index.html": "/ev-project/index.html",
-    "static/css/main.e80f4797.chunk.css.map": "/ev-project/static/css/main.e80f4797.chunk.css.map",
-    "static/js/2.db225dca.chunk.js.LICENSE.txt": "/ev-project/static/js/2.db225dca.chunk.js.LICENSE.txt"
+    "static/css/main.eed0368b.chunk.css.map": "/ev-project/static/css/main.eed0368b.chunk.css.map",
+    "static/js/2.db225dca.chunk.js.LICENSE.txt": "/ev-project/static/js/2.db225dca.chunk.js.LICENSE.txt",
+    "static/media/evcharger.1993c11d.PNG": "/ev-project/static/media/evcharger.1993c11d.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.0aa41bfb.js",
     "static/js/2.db225dca.chunk.js",
-    "static/css/main.e80f4797.chunk.css",
-    "static/js/main.ead0804e.chunk.js"
+    "static/css/main.eed0368b.chunk.css",
+    "static/js/main.a43fad55.chunk.js"
   ]
 }
