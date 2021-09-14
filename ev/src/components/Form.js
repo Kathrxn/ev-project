@@ -3,6 +3,7 @@ import YourCars from './YourCars';
 import Other from './Other';
 import Garages from './Garages'
 import Grants from './Grants';
+import Nav from './nav';
 import axios from 'axios';
 import {motion} from 'framer-motion';
 import {pageAnimation,photoAnim} from '../animation';
@@ -41,6 +42,7 @@ function Form({cars, setCars}){
     if(finalScore < 30){
     return(
       <div>
+        <Nav/>
        <motion.div variants={pageAnimation} className='card-red'>
           <div className='box-red'>
             <p className='score'>{finalScore}</p>
@@ -60,6 +62,7 @@ function Form({cars, setCars}){
   if(finalScore > 29 && finalScore < 70){
     return(
       <div>
+        <Nav/>
        <motion.div variants={pageAnimation} className='card-yellow'>
           <div className='box-yellow'>
             <p className='score'>{finalScore}</p>
@@ -79,6 +82,7 @@ function Form({cars, setCars}){
   if(finalScore > 69){
     return(
       <div>
+        <Nav/>
        <motion.div variants={pageAnimation} className='card-green'>
           <div className='box-green'>
             <p className='score'>{finalScore}</p>
