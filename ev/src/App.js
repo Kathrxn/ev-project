@@ -3,6 +3,7 @@ import data from './carList';
 import Form from './components/Form';
 import Home from './components/home';
 import More from './components/More';
+import Scoring from './components/scoring';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './styles/app.scss';
 import {AnimatePresence} from 'framer-motion';
@@ -22,6 +23,9 @@ function App() {
             </Route>
             <Route path='/more'>
               <More/>
+            </Route>
+            <Route path='/scoring'>
+              <Scoring/>
             </Route>
           </Switch>
         </Router>

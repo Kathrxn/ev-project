@@ -13,6 +13,9 @@ function Nav(){
         <li>
           <Link to='/more'>More Info</Link>
         </li>
+        <li>
+          <Link to='/scoring'>Scoring</Link>
+        </li>
       </ul>
     </nav>
   );
