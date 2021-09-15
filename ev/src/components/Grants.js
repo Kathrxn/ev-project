@@ -25,7 +25,6 @@ function Grants(){
           <div className='contlink'>The second grant available is the Electric Vehicle Homecharge Scheme which provides
             grant funding of up to 75% towards the cost of installing electric vehicle chargepoints at domestic properties across the UK.</div>
           <br/>
-          <div className='cont'>Don't forget that EVs pay no vehicle excise duty (road tax) even if the vehicle is worth more than £40,000.</div>
         </div>
       </div>
     )}

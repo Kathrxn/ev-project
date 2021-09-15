@@ -164,7 +164,7 @@ function YourCars({cars, setCars, range, budget}){
           if (range === '200-299' && budget === '60000+'){
             return (
               <div className='cards'>
-               {cars.slice(0,102).map(car => {
+               {cars.slice(0,106).map(car => {
                  if(car.price > 59999 && car.range > 199 && car.name.includes('coming') === false && car.name.includes('from') === false && car.name.includes('later') === false){
                  return (
                   <div className='card'>

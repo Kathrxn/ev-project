@@ -205,6 +205,11 @@ p{
     display: flex;
 }
 
+@media (max-width: 600px) {
+  .flex { flex-direction: column;
+  align-items:center;}
+}
+
 .modal > .headerafter {
   width: 100%;
   border-bottom: 1px solid gray;
@@ -276,7 +281,8 @@ nav{
 }
 
 @media (max-width: 600px) {
-  .popupbutton { margin: 5%;}
+  .popupbutton { margin: 5%;
+  width: 78%;}
 }
 
 @media (min-width: 600px) {

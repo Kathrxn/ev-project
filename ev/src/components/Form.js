@@ -3,6 +3,7 @@ import YourCars from './YourCars';
 import Other from './Other';
 import Garages from './Garages'
 import Grants from './Grants';
+import Costs from './costs';
 import Nav from './nav';
 import axios from 'axios';
 import {motion} from 'framer-motion';
@@ -55,6 +56,7 @@ function Form({cars, setCars}){
         <div className="flex">
           <Other/>
           <Garages/>
+          <Costs/>
           <Grants/>
         </div>
       </div>
@@ -76,6 +78,7 @@ function Form({cars, setCars}){
           <div className="flex">
             <Other/>
             <Garages/>
+            <Costs/>
             <Grants/>
           </div>
       </div>
@@ -99,6 +102,7 @@ function Form({cars, setCars}){
           <div className="flex">
             <Other/>
             <Garages/>
+            <Costs/>
             <Grants/>
           </div>
       </div>
