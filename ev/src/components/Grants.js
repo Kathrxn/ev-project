@@ -13,14 +13,19 @@ function Grants(){
         <button className="close" onClick={close}>
           &times;
         </button>
-        <div className="header"> Charging </div>
+        <div className="header"> Grants </div>
         <div className="content">
           {' '}
-          <div className='cont'>Many EV dealerships offer free servicing and MOTs for 2 years with the purchase of a vehicle.However, after the free time period is up many owners prefer to use an independent garage.</div>
+          <div className='cont'>The UK government offers two grants for those purcasing an electric vehicle.</div>
           <br />
-          <div className='cont'>You might want to consider how close your nearest independent EV garage is to your home. HEVRA provide an interactive map of all EV friendly garages in the UK.</div>
+          <div className='cont'>The first grant will pay up for up to 35% of the purchase price of an EV, up to a maximum of £2,500. The grant is only available to cars with on road value of less than £35,000.</div>
           <br/>
-          <a href="https://hevra.org.uk/garages.html">Find your nearest EV friendly garage</a>
+          <a href="https://www.gov.uk/plug-in-car-van-grants">Check out the full list of cars eligible</a>
+          <br/>
+          <div className='contlink'>The second grant available is the Electric Vehicle Homecharge Scheme which provides
+            grant funding of up to 75% towards the cost of installing electric vehicle chargepoints at domestic properties across the UK.</div>
+          <br/>
+          <div className='cont'>Don't forget that EVs pay no vehicle excise duty (road tax) even if the vehicle is worth more than £40,000.</div>
         </div>
       </div>
     )}

@@ -20,6 +20,16 @@
   }
 }
 
+@media (max-width: 600px){
+  .homepage{
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+  .image{
+    display: none;
+  }
+}
+
 h1{
   color: white;
   padding-bottom: 2rem;
