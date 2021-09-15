@@ -23,6 +23,7 @@ function Other(){
             <li>Does the vehicle allow rapid charging</li>
             <li>The cost of charging the vehicle</li>
           </ul>
+          <div>You can use<a href="https://www.zap-map.com/"> Zap Map </a>or the<a href="https://www.zap-map.com/"> Open Charge Map </a>to check the type of charge points available near you.</div>
           <br />
           Energy providers will often offer cheaper rates for those wanting to charge an EV at home.
         </div>
