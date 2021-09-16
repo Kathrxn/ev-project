@@ -14,18 +14,20 @@ function App() {
     <div className="App">
       <AnimatePresence exitBeforeEnter>
           <Switch location={window.location} key={window.location.pathname}>
-            <Route path='/ev-project' exact component ={Home}>
-              <Home />
-            </Route>
-            <Route path='/form'>
-              <Form cars={cars} setCars={setCars}/>
-            </Route>
-            <Route path='/more'>
-              <More/>
-            </Route>
-            <Route path='/scoring'>
-              <Scoring/>
-            </Route>
+           <Router>
+              <Route path='/ev-project' exact>
+                <Home />
+              </Route>
+              <Route path='/form'>
+                <Form cars={cars} setCars={setCars}/>
+              </Route>
+              <Route path='/more'>
+                <More/>
+              </Route>
+              <Route path='/scoring'>
+                <Scoring/>
+              </Route>
+           </Router>
           </Switch>
       </AnimatePresence>
     </div>
