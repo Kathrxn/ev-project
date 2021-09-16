@@ -35,6 +35,9 @@
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  .carform { min-height: 75vh; }
+}
 
 @media (max-width: 600px) {
   .question { width: 300px; }

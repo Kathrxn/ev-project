@@ -40,7 +40,7 @@ function Scoring(){
               <li>No = 0</li>
             </ul>
           </li>
-          <li className='scoreq'>What would be your budget to buy a brand new EV?
+          <li className='scoreqlast'>What would be your budget to buy a brand new EV?
             <ul className='scorescore'>
               <li>0-19,000 = -15</li>
               <li>20,000-39,999 = 0</li>

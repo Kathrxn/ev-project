@@ -74,7 +74,7 @@ function Form({cars, setCars}){
             <p className='score'>{finalScore}</p>
           </div>
           <div className='cardtext'>
-              <div>An Electric car might be right for you. You might want to do more research, make sure to check out the other things to consider section below.</div>
+              <div>An Electric car might be right for you. Make sure to check out the other things to consider section below.</div>
               <div className='carddiv'>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode</div>
               <div className='carddiv'>Find your recommended EVs below.</div>
           </div>

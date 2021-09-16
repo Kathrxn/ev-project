@@ -95,6 +95,14 @@ p{
   padding-top: 2.2%;
 }
 
+@media (max-width: 600px) {
+  .scorecard { padding:5% 3%;
+  padding-left: 6%;}
+  .scoreqlast{
+    margin-bottom: 5%;
+  }
+}
+
 .scorestart{
   text-align: center;
   padding-bottom: 3%;
@@ -102,6 +110,10 @@ p{
 }
 
 .scoreq{
+  font-weight: bold;
+}
+
+.scoreqlast{
   font-weight: bold;
 }
 
