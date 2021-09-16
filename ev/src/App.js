@@ -4,6 +4,7 @@ import Form from './components/Form';
 import Home from './components/home';
 import More from './components/More';
 import Scoring from './components/scoring';
+import NotFound from './components/notfound';
 import {BrowserRouter as Router, Switch, Route,useLocation} from 'react-router-dom';
 import './styles/app.scss';
 import {AnimatePresence} from 'framer-motion';
@@ -13,8 +14,8 @@ function App() {
   return (
     <div className="App">
       <AnimatePresence exitBeforeEnter>
-          <Switch location={window.location} key={window.location.pathname}>
-           <Router>
+        <Router>
+          <Switch>
               <Route path='/ev-project' exact>
                 <Home />
               </Route>
@@ -27,8 +28,9 @@ function App() {
               <Route path='/scoring'>
                 <Scoring/>
               </Route>
-           </Router>
-          </Switch>
+               <Route path="*" component={NotFound} />
+           </Switch>
+          </Router>
       </AnimatePresence>
     </div>
   );
