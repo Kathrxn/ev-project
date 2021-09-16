@@ -52,6 +52,7 @@ function Form({cars, setCars}){
             <div>An Electric car is probably not right for you.</div>
             <div className='carddiv'>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode</div>
             <div className='carddiv'>Find your recommended EVs below.</div>
+            <div className='carddiv'>When clicking back after clicking on external links you may need to reload the homepage.</div>
           </div>
         </motion.div>
         <YourCars cars={cars} setCars={setCars} range={range} budget={budget}/>
@@ -77,6 +78,7 @@ function Form({cars, setCars}){
               <div>An Electric car might be right for you. Make sure to check out the other things to consider section below.</div>
               <div className='carddiv'>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode</div>
               <div className='carddiv'>Find your recommended EVs below.</div>
+              <div className='carddiv'>When clicking back after clicking on external links you may need to reload the homepage.</div>
           </div>
         </motion.div>
           <YourCars cars={cars} setCars={setCars} range={range} budget={budget}/>
@@ -102,6 +104,7 @@ function Form({cars, setCars}){
             <div>An electric car is most likely right for you, check out the other things to consider section below.</div>
             <div className='carddiv'>There are {noOfChargers} EV charge points within a 5 mile radius of your postcode.</div>
             <div className='carddiv'>Find your recommended EVs below.</div>
+            <div className='carddiv'>When clicking back after clicking on external links you may need to reload the homepage.</div>
          </div>
         </motion.div>
           <YourCars cars={cars} setCars={setCars} range={range} budget={budget}/>
