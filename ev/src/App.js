@@ -13,7 +13,6 @@ function App() {
   return (
     <div className="App">
       <AnimatePresence exitBeforeEnter>
-        <Router>
           <Switch>
             <Route path='/ev-project' exact component ={Home}>
               <Home />
@@ -28,7 +27,6 @@ function App() {
               <Scoring/>
             </Route>
           </Switch>
-        </Router>
       </AnimatePresence>
     </div>
   );
